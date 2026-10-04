@@ -1,0 +1,19 @@
+FANNY APP — Cuida de ti, ciclo após ciclo.
+App estática, 100% offline, sem backend nem bibliotecas externas. Todos os ficheiros ficam na mesma pasta.
+
+FICHEIROS: index.html (HTML+CSS) · app.js (toda a lógica) · sw.js (offline) · manifest.json · icon.svg
+
+EXECUTAR LOCALMENTE (precisa de localhost/HTTPS para PWA e service worker):
+  python3 -m http.server 8080   -> abrir http://localhost:8080 no Chrome
+  (abrir index.html com duplo clique funciona, mas sem instalação PWA/offline)
+
+INSTALAR NO ANDROID: publica a pasta em qualquer alojamento HTTPS estático (ex.: GitHub Pages, Netlify),
+abre no Chrome > menu ⋮ > "Instalar aplicação". Depois funciona sem Internet.
+
+ATUALIZAR: substitui os ficheiros e altera a versão em sw.js (const C='fanny-app-v2'). Os dados não são apagados.
+
+BACKUP: Mais > Definições > Dados > Exportar meus dados (JSON). Restaura com "Importar meus dados".
+
+LIMITES: dados ficam só no navegador (limpar dados do site apaga tudo — faz backup);
+notificações com a app fechada dependem do Android; a biometria usa WebAuthn e só funciona em HTTPS;
+o PIN protege o acesso à app, não cifra os dados. Previsões não são método contraceptivo.
