@@ -1,4 +1,4 @@
-FANNY APP — Cuida de ti, ciclo após ciclo.
+MY CYCLE+ — Cuida de ti, ciclo após ciclo.
 App estática, 100% offline, sem backend nem bibliotecas externas. Todos os ficheiros ficam na mesma pasta.
 
 FICHEIROS: index.html (HTML+CSS) · app.js (toda a lógica) · sw.js (offline) · manifest.json · icon.svg
